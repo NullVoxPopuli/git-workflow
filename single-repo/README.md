@@ -15,7 +15,7 @@
 ## Starting your fetaure / bug fix
 
 ### Create a branch named after your feature / bug fix
-![branching](/NullVoxPopuli/git-workflow/blom/master/branch.png)
+![branching](../images/branch.png)
 
 `git checkout -b name-of-your-feature-or-bug-fix`
 This will create the branch and checkout that branch at the same time. This is the equivelant of:
@@ -33,7 +33,7 @@ Before merging our branch to `master`, we'll want to clean up our feature / bug 
 `NUMCOMMITS=$(git rev-list --count HEAD ^master); echo $NUMCOMMITS`
 
 #### Combine all the commits on your branch in to one.
-![squashing](/NullVoxPopuli/git-workflow/blom/master/squash.png)
+![squashing](../images/squash.png)
 
 `git rebase -i HEAD~$NUMCOMMITS`
 
@@ -62,7 +62,7 @@ initial refactor to make way for easy feature adding
 You can either add a line to the top of the pre-existing messages to summarize what all has been done, or it could all be deleted and you could write a message that concisely describes what your branch adds to the project.
 
 #### Rebase your branch against master
-![rebase](/NullVoxPopuli/git-workflow/blom/master/rebase.png)
+![rebase](../images/rebase.png)
 
 This changes which commit your branch is *based* off of.  
 First we'll want to update our local copy of `master`
@@ -90,7 +90,7 @@ Now, it will look like all of your changes happened after the most recent commit
 Note the `-f`. This means "force", as it will overwrite the history of your branch on the server. So it is very important to either have completed work on the branch, or be the only person working on the branch. In any case, only squash and force push when the branch is complete, and ready to be submitted for review.
 
 ## The Review and Merge Process
-![merge](/NullVoxPopuli/git-workflow/blom/master/merge.png)
+![merge](../images/merge.png)
 
 Once the branch is syncronized with the remote (e.g.: `origin`), a pull request for `name-of-you-feature-or-bug-fix` should be made against the `master` branch.
 
