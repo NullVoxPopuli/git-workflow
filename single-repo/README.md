@@ -1,16 +1,16 @@
 # Git Workflow
 
-- [Starting Your Feature](#starting-your-fetaure--bug-fix)
-  - [Create the Branch](#create-a-branch-named-after-your-feature--bug-fix)
-  - [Preparing to Merge the Completed Feature](#preparing-your-feature--bug-fix-to-be-merged)
-    - [Squash](#find-out-how-many-commits-you-have-on-your-branch)
-    - [Rebase](#rebase-your-branch-against-master)
-      - [Updating Master](#updating-master)
-      - [The Rebase Command](#the-rebase-command)
-    - [Update Remote](#push-the-changes-to-your-branch-to-the-remote-server-typically-origin)
-- [The Reviewing Process](#the-review-and-merge-process)
-  - [Pull Request isn't Immediately Accepted](#what-happens-if-your-pull-request-isnt-accepted-right-away)
-- [Guidelines](#guidelines)
+- [Starting Your Feature](./README.md#starting-your-fetaure--bug-fix)
+  - [Create the Branch](./README.md#create-a-branch-named-after-your-feature--bug-fix)
+  - [Preparing to Merge the Completed Feature](./README.md#preparing-your-feature--bug-fix-to-be-merged)
+    - [Squash](./README.md#find-out-how-many-commits-you-have-on-your-branch)
+    - [Rebase](./README.md#rebase-your-branch-against-master)
+      - [Updating Master](./README.md#updating-master)
+      - [The Rebase Command](./README.md#the-rebase-command)
+    - [Update Remote](./README.md#push-the-changes-to-your-branch-to-the-remote-server-typically-origin)
+- [The Reviewing Process](./README.md#the-review-and-merge-process)
+  - [Pull Request isn't Immediately Accepted](./README.md#what-happens-if-your-pull-request-isnt-accepted-right-away)
+- [Guidelines](./README.md#guidelines)
 
 ## Starting your fetaure / bug fix
 
