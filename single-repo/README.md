@@ -1,6 +1,6 @@
 # Git Workflow
 
-- [Starting Your Feature](./README.md#starting-your-fetaure--bug-fix)
+- [Starting Your Feature](./README.md#starting-your-feature--bug-fix)
   - [Create the Branch](./README.md#create-a-branch-named-after-your-feature--bug-fix)
   - [Preparing to Merge the Completed Feature](./README.md#preparing-your-feature--bug-fix-to-be-merged)
     - [Squash](./README.md#find-out-how-many-commits-you-have-on-your-branch)
