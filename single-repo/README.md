@@ -12,9 +12,9 @@
   - [Pull Request isn't Immediately Accepted](./README.md#what-happens-if-your-pull-request-isnt-accepted-right-away)
 - [Guidelines](./README.md#guidelines)
 
-## Starting your fetaure / bug fix
+## Starting your Feature / Bug Fix
 
-### Create a branch named after your feature / bug fix
+### Create a Branch Named after your Feature / Bug Fix
 ![branching](../images/branch.png)
 
 `git checkout -b name-of-your-feature-or-bug-fix`
@@ -26,13 +26,13 @@ git checkout name-of-you-feature-or-bug-fix
 
 Now that you are in your own branch, you can make however many commits, with whatever commit messages you want, even frustrating messages about things not working and having no idea why. These will be edited later.
 
-## Preparing your feature / bug fix to be merged
+## Preparing your Feature / Bug Fix to Be Merged
 Before merging our branch to `master`, we'll want to clean up our feature / bug fix branch's commit history.
 
-#### Find out how many commits you have on your branch.
+#### Determine How Many Commits You Have on your Branch.
 `NUMCOMMITS=$(git rev-list --count HEAD ^master); echo $NUMCOMMITS`
 
-#### Combine all the commits on your branch in to one.
+#### Combine All Commits on your Branch in to One.
 ![squashing](../images/squash.png)
 
 `git rebase -i HEAD~$NUMCOMMITS`
@@ -52,7 +52,7 @@ squash 4f2ad3e rename add_relationship methods to be less awkward
 ```   
 Note that the top line is the oldest commit on your branch, and the bottom commit is the most recent.
 
-#### Edit the combined commit message.
+#### Edit the Combined Commit Message.
 You'll be faced with a screen that will look something like this:  
 ```
 # This is a combination of 3 commits.
@@ -61,13 +61,13 @@ initial refactor to make way for easy feature adding
 ```
 You can either add a line to the top of the pre-existing messages to summarize what all has been done, or it could all be deleted and you could write a message that concisely describes what your branch adds to the project.
 
-#### Rebase your branch against master
+#### Rebase your Branch against Master
 ![rebase](../images/rebase.png)
 
 This changes which commit your branch is *based* off of.  
 First we'll want to update our local copy of `master`
 
-##### Updating master
+##### Updating Master
 
 ```
 git checkout master
@@ -85,7 +85,7 @@ To proceed, you'll want to switch back to your branch.
 
 Now, it will look like all of your changes happened after the most recent commit on `master`. This makes `master`s history look clear and well organized.
 
-#### Push the changes to your branch to the remote server
+#### Push the Changes to your Branch to the Remote Server
 `git push origin name-of-you-feature-or-bug-fix -f`  
 Note the `-f`. This means "force", as it will overwrite the history of your branch on the server. So it is very important to either have completed work on the branch, or be the only person working on the branch. In any case, only squash and force push when the branch is complete, and ready to be submitted for review.
 
@@ -103,7 +103,7 @@ Some general guidelines for reviewing code:
  - For larger pull requests, (maybe > 100 additions/deletions and < 500 additions/deletions), there should be at least one additional reviewer. The majority of reviewers should sign off on the pull request before it is merged in to `master`.
 
 
-### What happens if your pull request isn't accepted right away?
+### What Happens if your Pull Request Isn't Accepted Right Away?
 
 If a reviewer leaves actionable feedback, you'll have to make changes to your branch, and re-commit and re-push.
 It's recommended to not re-squash until all reviewers are ok with your code, and there is nothing left to review. This to help track the history of the pull request and see how it changes over the review process.
