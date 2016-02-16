@@ -11,6 +11,14 @@ Specifics will be in their respective folders.
  - [Single-Repo](./single-repo/README.md)
  - [Multi-Repo (Forking)](./multi-repo/README.md)
 
+# General Information
+
+ - [Machine Setup](./machine-setup.md)
+ - [Conflict Resolution](./conflicts.md)
+ - [Undoing](./undoing.md)
+ - [Local Status](./status.md)
+
+
 # Todo
 
  - Higher Quality Pictures
@@ -21,7 +29,6 @@ Specifics will be in their respective folders.
    - Merging
    - Releasing
    - Emergency!
-     - [Merge Conflicts](./conflicts.md)
      - Hotfixes
      - Lost Code
        - Recovery
