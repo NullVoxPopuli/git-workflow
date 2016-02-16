@@ -21,7 +21,7 @@ Specifics will be in their respective folders.
    - Merging
    - Releasing
    - Emergency!
-    - Merge Conflicts
+    - [Merge Conflicts](./conflicts.md)
     - Hotfixes
     - Lost Code
       - Recovery
