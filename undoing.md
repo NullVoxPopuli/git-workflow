@@ -1,5 +1,6 @@
 # Undoing
 
+Note that where `master` is used, any branch name could be used.
 
 ## Revert a file that was accidentally changed in a branch
 
