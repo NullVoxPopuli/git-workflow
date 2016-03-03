@@ -13,3 +13,7 @@ This document is to provide various commands for checking on the status and stat
 ## How many commits past the parent branch is my branch?
 
 `NUMCOMMITS=$(git rev-list --count HEAD ^master); echo $NUMCOMMITS`
+
+## What remote branches are available?
+
+`git branch -r`
