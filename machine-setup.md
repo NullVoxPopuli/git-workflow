@@ -8,7 +8,7 @@ Note that anything with the command line *will* be easier with a \*nix machine.
 It is recommended against GUI-based git clients, because they hamper learning and will get in the way when something bad happens (merge conflict, bad squash, etc).
 
 | Operating System | Install Via |
-| -- | -- |
+| ---- | ---- |
 | Ubuntu | `sudo apt-get install git` |
 | Windows | [Download and Install this file](https://git-scm.com/download/win) |
 | OS X | [Download and Install this file](http://git-scm.com/download/mac) |
